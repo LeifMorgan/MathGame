@@ -18,7 +18,7 @@
 
 
 	</form>
-	<a class="button" href='create_Account.php'>Create Account</a>
+	<a class="button" type='submit' href='create_Account.php'>Create Account</a>
 
 </body>
 </html>

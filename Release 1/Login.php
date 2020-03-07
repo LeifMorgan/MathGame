@@ -7,7 +7,7 @@
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 	</head>
 <body>
-	<form action="our_check_login.php" method="post" id="form_id">
+	<form action="check_Login.php" method="post" id="form_id">
 		<h2>Welcome to Math Game</h2>
 		Userame:
 		<input type="text" name="username" id="username" placeholder="Name" />

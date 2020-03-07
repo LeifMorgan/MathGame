@@ -1,6 +1,6 @@
 <?php
-require_once 'our_files.php';
-require_once 'our_config.php';
+require_once 'Files.php';
+require_once 'Config.php';
 echo "<pre>";
  /*names of two input: username and password*/
 /*foreach($_POST as $key => $val){

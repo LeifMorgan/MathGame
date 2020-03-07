@@ -9,10 +9,10 @@
 <body>
 	<form action="check_Login.php" method="post" id="form_id">
 		<h2>Welcome to Math Game</h2>
-		Userame:
+		Create Userame:
 		<input type="text" name="username" id="username" placeholder="Name" />
 		<br/><br/>
-		Password:
+		Create Password:
 		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
 		<input type="submit" name="submit_id" id="login" value="Login" />
 	</form>

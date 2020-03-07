@@ -1,4 +1,4 @@
-kate newpw_Ea_ups CS240
-will upswill123 CS240
-alan nA90lA CS240
-jill Jj45Lj CS240
+kate newpw_Ea_ups 1
+will upswill123 1
+alan nA90lA 2
+jill Jj45Lj 2

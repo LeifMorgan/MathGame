@@ -7,7 +7,7 @@
 	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
 	</head>
 <body>
-	<form action="check_Login.php" method="post" id="form_id">
+	<form action="check_Account.php" method="post" id="form_id">
 		<h2>Welcome: Create an Account</h2>
 		Create Userame:
 		<input type="text" name="username" id="username" placeholder="Name" />
@@ -15,7 +15,7 @@
 		Create Password:
 		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
 		Confirm Password:
-		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
+		<input type="password" name="password" id="password2" placeholder="Password" /><br/><br/>
 		<input type="submit" name="submit_id" id="Create" value="Create" />
 
 	</form>

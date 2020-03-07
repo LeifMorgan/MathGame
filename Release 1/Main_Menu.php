@@ -30,8 +30,14 @@
 	//print_r($query_array);
 
 
-	echo "<p>Welcome to Math Game, ".$query_array["user"]."</p>";
-	echo"</pre>";
+	echo "<p>Welcome to SPLER Education, ".$query_array["user"]."</p>";
+	echo"</pre>"; 
+
 ?>
+	<br><br>
+    <input type="button" value="Game Selection" onclick= /><br><br><br>
+     <input type="button" value="Statistics" onclick= />
+    <br><br><br>
+	<input type="button" value="Sound Menu" onclick= />
 </body>
 </html>

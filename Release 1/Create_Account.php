@@ -14,6 +14,8 @@
 		<br/><br/>
 		Create Password:
 		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
+		Confirm Password:
+		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
 		<input type="submit" name="submit_id" id="login" value="Login" />
 
 	</form>

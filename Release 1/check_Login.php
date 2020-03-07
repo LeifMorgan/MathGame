@@ -16,7 +16,7 @@ $re = checkLogin($username, $password);
 
 if($re===1){
 	/*Redirect browser*/
-	header("Location: our_welcome.php/?user=$username");
+	header("Location: Main_Menu.php/?user=$username");
 
 }else{
 	echo "Invaild username or password";

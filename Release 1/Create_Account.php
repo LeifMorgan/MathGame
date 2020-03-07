@@ -8,7 +8,7 @@
 	</head>
 <body>
 	<form action="check_Login.php" method="post" id="form_id">
-		<h2>Welcome to Math Game</h2>
+		<h2>Welcome: Create an Account</h2>
 		Create Userame:
 		<input type="text" name="username" id="username" placeholder="Name" />
 		<br/><br/>

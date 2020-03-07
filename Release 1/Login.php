@@ -15,6 +15,8 @@
 		Password:
 		<input type="password" name="password" id="password" placeholder="Password" /><br/><br/>
 		<input type="submit" name="submit_id" id="login" value="Login" />
+
+		<button href='createAccount.php'>Create Account</button>
 	</form>
 
 </body>

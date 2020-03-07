@@ -12,7 +12,7 @@ extract($_POST);
 
 //1: can login 2: user does not exist  3: invaild password
 $re = checkLogin($username, $password);
-//$re = 2; //Please comment this after completing your checkLogin function  
+//$re = 2; //Please comment this after completing your checkLogin function
 
 if($re===1){
 	/*Redirect browser*/
@@ -29,7 +29,7 @@ if($re===1){
 /**
 *Returns 1: can login
 *		 2: user does not exist
-		 3: invaild password
+*		 3: invaild password
 	*/
 function checkLogin($name, $pw){
 	$all_user = get_user_info(USERFILE);

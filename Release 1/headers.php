@@ -116,19 +116,34 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 </style>
 </head>
 <body>
+  <?php
+  	include 'query.php';
+  	/*foreach ($_SERVER as $key => $value) {
+  		echo "$key:$value\n";
+  	}*/
+  	$query_array = prepare_query_string();
+  	//print_r($query_array);
+
+  ?>
+
   <div class="menu">
 <ul>
-  <!--
-  need to figure out how to get ?user=$username to stay in url
-  <li><a href="../Main_Menu.php">Menu</a></li> -->
-  <li><a href="../view_Students.php">Students</a></li>
-  <li><a href="../add_Students.php">Add Student</a></li>
+
+  <?php echo '<li><a  href="../Main_Menu.php/?user='.$query_array["user"].'" >Menu</a></li>' ?>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Students</a>
+    <div class="dropdown-content">
+      <?php echo '<a  href="../view_Students.php/?user='.$query_array["user"].'" >View Students</a>' ?>
+      <?php echo '<a  href="../add_Students.php/?user='.$query_array["user"].'" >Add Student</a>' ?>
+    </div>
+  </li>
+
 
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Problems</a>
     <div class="dropdown-content">
-      <a href="../create_Problem.php">Create Problems</a>
-      <a href="../view_Problems.php">View Problems</a>
+      <?php echo '<a href="../create_Problem.php/?user='.$query_array["user"].'">Create Problems</a>' ?>
+      <?php echo '<a href="../view_Problems.php/?user='.$query_array["user"].'">View Problems</a>' ?>
     </div>
   </li>
 
@@ -137,8 +152,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Settings</a>
     <div class="dropdown-content to-right">
-      <a href="../settings.php">Options</a>
-      <a>Logout</a>
+      <?php echo '<a href="../settings.php/?user='.$query_array["user"].'">Options</a>' ?>
+      <a href="../Login.php">Logout</a>
     </div>
   </li>
   </div>

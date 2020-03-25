@@ -1,3 +1,7 @@
+<?php
+    include 'headers.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +10,7 @@
 	</head>
 <body>
 <?php
+
 
    function prepare_query_string(){
 		//echo $_SERVER['QUERY_STRING'];
@@ -34,11 +39,6 @@
 	echo"</pre>";
 
 ?>
-	<br><br>
-    <a href="create_Problem.php/?user=<?echo ".$username."?>">Create Problem</a>
-		<br><br><br>
-     <input type="button" value="Statistics" onclick= />
-    <br><br><br>
-	<input type="button" value="Sound Menu" onclick= />
+
 </body>
 </html>

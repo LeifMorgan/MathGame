@@ -13,14 +13,14 @@
 		$query_array = explode("&", $_SERVER["QUERY_STRING"]);
 		foreach ($query_array as $key => $value) {
 		$temp = explode("=", $value);
-		$re[$temp[0]] = $temp[1]; 
+		$re[$temp[0]] = $temp[1];
 		}
 		return $re;
 	}
 ?>
 
 
-<?php 
+<?php
 	echo "<pre>";
 	/*foreach ($_SERVER as $key => $value) {
 		echo "$key:$value\n";
@@ -31,11 +31,12 @@
 
 
 	echo "<p>Welcome to SPLER Education, ".$query_array["user"]."</p>";
-	echo"</pre>"; 
+	echo"</pre>";
 
 ?>
 	<br><br>
-    <input type="button" value="Game Selection" onclick= /><br><br><br>
+    <a href="create_Problem.php/?user=<?echo ".$username."?>">Create Problem</a>
+		<br><br><br>
      <input type="button" value="Statistics" onclick= />
     <br><br><br>
 	<input type="button" value="Sound Menu" onclick= />

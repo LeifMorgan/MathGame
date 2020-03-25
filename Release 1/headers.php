@@ -118,7 +118,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 <body>
   <div class="menu">
 <ul>
-  <li><a href="http://149.165.157.23/~masteryuser/coursePage.php">Course Homepage</a></li>
+  <li><a href="http://149.165.157.23/~masteryuser/coursePage.php">Menu</a></li>
   <!-- <li><a href="http://149.165.157.23/~masteryuser/index.php">Back to Courses</a></li> -->
   <li><a href="http://149.165.157.23/~masteryuser/createQuiz.php">Create a Quiz</a></li>
 

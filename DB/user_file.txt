@@ -6,4 +6,6 @@ peer peer 2
 leif 123 2
 example qwe123 2
 admin 123123 2
-  2
+qwe 123 1
+qwee 123 1
+qweee 123 2

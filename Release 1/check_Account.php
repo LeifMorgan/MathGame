@@ -9,6 +9,11 @@ echo "<pre>";
 }*/
 
 extract($_POST);
+$acc = 1;
+//checks to see which type is selected
+if($_POST['class'] == 'student'){
+    $acc = 2;
+}
 
 
 //1: can login 2: user does not exist  3: invaild password
@@ -16,24 +21,24 @@ $re = checkAccount($username, $password, $password2);
 //$re = 2; //Please comment this after completing your checkLogin function
 
 if($re===1){
-  save_data(USERFILE,[$username,$password, 2]);
+
+  save_data(USERFILE,[$username,$password, $acc]);
 	/*Redirect browser*/
 	header("Location: Login.php");
 
 }else if($re==2){
 	echo "Username Already Exists";
 
-
-  header("refresh:2; url=create_Account.php");
+  header("refresh:20; url=create_Account.php");
 } else if($re == 4){
   echo "Must enter valid Username/Password";
 
-  header("refresh:2; url=create_Account.php");
+  header("refresh:20; url=create_Account.php");
 }
 else {
   echo "Passwords do not match";
 
-  header("refresh:2; url=create_Account.php");
+  header("refresh:20; url=create_Account.php");
 }
 
 

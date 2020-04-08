@@ -26,7 +26,7 @@ if($re===1){
 
   header("refresh:2; url=create_Account.php");
 } else if($re == 4){
-  echo "Must enter valid Username/Password"
+  echo "Must enter valid Username/Password";
 
   header("refresh:2; url=create_Account.php");
 }
@@ -45,9 +45,9 @@ else {
 	*/
 function checkAccount($name, $pw, $pw2){
   $all_user = get_user_info(USERFILE);
-  if($name == ""){return 4}
-  if($pw == ""){return 4}
-  if($pw2 == ""){return 4}
+  if($name == ""){return 4;}
+  if($pw == ""){return 4;}
+  if($pw2 == ""){return 4;}
 	if(array_key_exists($name, $all_user)) {
 		return 2;
 	} else if($pw == $pw2) {

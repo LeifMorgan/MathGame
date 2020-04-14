@@ -34,7 +34,7 @@ if($re===1){
 *		 3: invaild password
 	*/
 function checkLogin($name, $pw){
-	$all_user = get_user_info(USERFILE);
+	$all_user = get_login_info(USERFILE);
 	// console.log("HELLO");
 	// console.log($all_user["$name"]["password"]);
 	if(array_key_exists($name, $all_user) and ($pw == $all_user["$name"]["password"])) {

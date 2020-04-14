@@ -1,6 +1,7 @@
 <?php
 require_once 'Files.php';
 require_once 'Config.php';
+require_once 'configStudents.php';
 echo "<pre>";
 
  /*names of two input: username and password*/
@@ -9,6 +10,7 @@ echo "<pre>";
 }*/
 
 extract($_POST);
+
 $acc = 1;
 //checks to see which type is selected
 if($_POST['class'] == 'student'){
@@ -21,7 +23,9 @@ $re = checkAccount($username, $password, $password2);
 //$re = 2; //Please comment this after completing your checkLogin function
 
 if($re===1){
-
+  if($acc === 2){
+    save_data(STUDENTS,[$username, 100, 'placeholder']);
+  }
   save_data(USERFILE,[$username,$password, $acc]);
 	/*Redirect browser*/
 	header("Location: Login.php");
@@ -47,6 +51,7 @@ else {
 *		 2: username already exists
 *		 3: passwords dont match
 *    4: must enter pwd/username
+*    5: a space was found in the username
 	*/
 function checkAccount($name, $pw, $pw2){
   $all_user = get_user_info(USERFILE);
@@ -57,7 +62,8 @@ function checkAccount($name, $pw, $pw2){
 		return 2;
 	} else if($pw == $pw2) {
     return 1;
-	} else {
+	}
+  else {
     return 3;
   }
 

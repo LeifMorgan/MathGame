@@ -28,7 +28,7 @@
 		  $newFile = "";
 		  foreach ($myfile as $line) {
 		    echo $line;
-		    if(strpos($line,$user)!==false){
+		    if(strpos($line,$user." ")!==false){
 
 		      // $key_arr_3 = array("name", "grade", "teacher");
 		      $removed = explode(" ", $line);

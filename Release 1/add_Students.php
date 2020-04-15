@@ -56,4 +56,6 @@ form {
 
   <input type="submit" name="submit_id" id="Submit" value="Submit" />
 </form>
+<p>These students have created an account, but have not been claimed by a teacher yet. Pick the students in your class to claim them!</p>
+<p>You can see your claimed students in the "View Students" tab</p>
 </html>

@@ -44,13 +44,10 @@ form {
     <?php
         $userlist = get_students_of_teacher(STUDENTS);
         foreach ($userlist as $getStudent) {
-
           if(trim($getStudent['teacher'])!== 'placeholder'){
-            echo '<br>';
-            echo "this shit";
-            echo '<br>';
             continue;
           }
+          //only show students that have "placeholder" as a teacher
           echo '<option value="'.$getStudent["name"].'">'.$getStudent["name"].'</option>';
         }
     ?>

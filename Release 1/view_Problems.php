@@ -1,6 +1,7 @@
 <?php
     include 'headers.php';
     require_once 'configproblem.php';
+    require_once 'configStudents.php';
     require_once 'Files.php';
 ?>
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-
+  
   <?php echo "<h2>".$query_array["user"]."'s Problems </h2>"; ?>
   <table>
   <?php

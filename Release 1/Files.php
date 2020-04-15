@@ -4,6 +4,7 @@
 	$key_arr_2 = array("a", "b", "operation","username");
 	$key_arr_3 = array("name", "grade", "teacher");
 
+
 	/*Write $data to $filename*/
 	function save_data($filename, $data){
 		$str = join(" ", $data)."\n";
@@ -20,37 +21,32 @@
 
 
 	function update_student_file($file, $user, $key, $value){
-		global $key_arr_3;
+			global $key_arr_3;
+      // $key_arr_3 = array("name", "grade", "teacher");
 
-		$myfile = file($file) or die("Failed to create files");
-		$str = "";
-		while($line=fgets($myfile)){
-			//Convert to array by " "
+		  $myfile = file($file);
+		  $newFile = "";
+		  foreach ($myfile as $line) {
+		    echo $line;
+		    if(strpos($line,$user)!==false){
 
-			$res = explode(" ", $line);
-			$info_arr = [];
+		      // $key_arr_3 = array("name", "grade", "teacher");
+		      $removed = explode(" ", $line);
+		      $new_res = [];
 
-			for($i = 0; $i<count($key_arr); $i++){
-				$new_res[$key_arr[$i]] = $res[$i];
-			}
+		      for($i = 0; $i<count($key_arr_3); $i++){
+						$new_res[$key_arr_3[$i]] = $removed[$i];
+					}
 
-			if(trim($new_res["name"]) !== trim($user)){
-				continue;
-			}
-
-
-
-
-			array_push($info_arr, $new_res);
-
-			//Destory local variable $new_res
-			unset($new_res);
-			unset($res);
-		}
-
-		fwrite($myfile, $str) or die("Could not write to file");
-
-		fclose($myfile);
+		      $new_res[$key] = $value."\n";
+		      $line = implode(" ", $new_res);
+          // echo '<br>';
+          // echo "success";
+          // echo '<br>';
+		    }
+		    $newFile .= $line;
+		  }
+		  file_put_contents($file,$newFile);
 	}
 
 	/***Reading from a file: fgets**/

@@ -129,20 +129,23 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   <div class="menu">
 <ul>
 
-  <?php echo '<li><a  href="../Main_Menu.php/?user='.$query_array["user"].'" >Menu</a></li>' ?>
-  <li class="dropdown">
+  <?php echo '<li><a  href="../Main_Menu_Student.php/?user='.$query_array["user"].'" >Menu</a></li>';
+        //echo '<li><a  href="../math.html/?user='.$query_array["user"].'" >Play Game</a></li>'
+        echo '<li><a  href="../math.html" >Play Game</a></li>'; ?>
+
+  <!-- <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Play Game</a>
     <div class="dropdown-content">
-      <?php echo '<a  href="../view_Play Game.php/?user='.$query_array["user"].'" >Level Select</a>' ?>
+      <?php //echo '<a  href="../view_Play Game.php/?user='.$query_array["user"].'" >Level Select</a>' ?>
     </div>
-  </li>
+  </li> -->
 
-  <li class="dropdown">
+  <!-- <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Problems</a>
     <div class="dropdown-content">
-      <?php echo '<a href="../view_Problems.php/?user='.$query_array["user"].'">View Problems</a>' ?>
+      <?php //echo '<a href="../view_Problems.php/?user='.$query_array["user"].'">View Problems</a>' ?>
     </div>
-  </li>
+  </li> -->
 
 
   <div class="to-right">

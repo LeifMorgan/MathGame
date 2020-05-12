@@ -129,9 +129,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   <div class="menu">
 <ul>
 
-  <?php echo '<li><a  href="../Main_Menu_Student.php/?user='.$query_array["user"].'" >Menu</a></li>';
-        //echo '<li><a  href="../math.html/?user='.$query_array["user"].'" >Play Game</a></li>'
-        echo '<li><a  href="../math.html" >Play Game</a></li>'; ?>
+  <?php echo '<li><a  href="../Main_Menu_Student.php/?user='.$query_array["user"].'" >Menu</a></li>';?>
+        <!-- echo '<li><a  href="../math.html/?user='.$query_array["user"].'" >Play Game</a></li>' -->
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Problems</a>
+          <div class="dropdown-content">
+            <?php echo '<a href="../addition.php/?user='.$query_array["user"].'">Addition</a>' ?>
+            <?php echo '<a href="../subtraction.php/?user='.$query_array["user"].'">Subtraction</a>' ?>
+            <?php echo '<a href="../decimals.php/?user='.$query_array["user"].'">Identify Decimal</a>' ?>
+          </div>
+        </li>
 
   <!-- <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Play Game</a>

@@ -66,6 +66,7 @@ fieldset {
 </head>
 <body>
 <form>
+  <input type="hidden" name="user" value="<?php echo htmlspecialchars($_GET['user']);?>">
   <fieldset align="center">
     <legend><strong><p>Addition</p></strong></legend>
 
@@ -107,8 +108,13 @@ fieldset {
       $i=0;
       foreach ($plist as $equation) {
         $username = $equation['username'];
+        // print_r($equation);
         //only print into table if the problem is from the current user's teacher
         if($username!==$current_teacher){
+          continue;
+        }
+        $prob_type = $equation['operation'];
+        if(trim($prob_type) !== "+"){
           continue;
         }
         //creating a new row

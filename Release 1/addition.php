@@ -224,7 +224,7 @@ else {
 
     $current_user = $query_array["user"];
 
-    print_r($current_user);
+    // print_r($current_user);
 
     //check student file for our current student's teacher
     foreach ($student_list as $student){
@@ -237,10 +237,9 @@ else {
       break;
     }
 
-    print_r($name);
+    // print_r($name);
 
-    // $current_teacher = $students_teach;
-    print_r($current_teacher);
+    // print_r($current_teacher);
 
     if(trim($current_teacher) === "placeholder"){
       $button = false;

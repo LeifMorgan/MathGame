@@ -90,28 +90,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 
-.dots {
-  position: relative;
-  background: #800000;
-  width: 50px;
-  height: 50px;
-  /* border-radius: 50%; */
-  /* margin: 20px; */
-}
-
-.dots:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 2px;
-  height: 2px;
-  margin-left: -1px;
-  margin-top: -1px;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px white, 0 11px 0 2px white, 0 -11px 0 2px white;
-}
 
 </style>
 </head>

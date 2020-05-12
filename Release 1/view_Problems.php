@@ -28,7 +28,7 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-  
+
   <?php echo "<h2>".$query_array["user"]."'s Problems </h2>"; ?>
   <table>
   <?php
@@ -47,10 +47,10 @@ tr:nth-child(even) {
       if($newRow === true){
         $newRow = false;
         echo '<tr>';
-        echo '<td>'.$equation['a'].$equation['operation'].$equation['b'].'</td>';
+        echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].'</td>';
       }
       else {
-        echo '<td>'.$equation['a'].$equation['operation'].$equation['b'].'</td>';
+        echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].'</td>';
         $col++;
         //if we need to create new row
         if($col === 2){

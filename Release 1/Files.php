@@ -2,7 +2,7 @@
 	/******File Handling*******/
 	$key_arr = array("username", "password", "class");
 	$key_arr_2 = array("a", "b", "operation","username");
-	$key_arr_3 = array("name", "grade", "teacher");
+	$key_arr_3 = array("name", "grade", "teacher", "numQuiz");
 
 
 	/*Write $data to $filename*/
@@ -22,12 +22,12 @@
 
 	function update_student_file($file, $user, $key, $value){
 			global $key_arr_3;
-      // $key_arr_3 = array("name", "grade", "teacher");
+      // $key_arr_3 = array("name", "grade", "teacher","numQuiz");
 
 		  $myfile = file($file);
 		  $newFile = "";
 		  foreach ($myfile as $line) {
-		    echo $line;
+		    // echo $line;
 		    if(strpos($line,$user." ")!==false){
 
 		      // $key_arr_3 = array("name", "grade", "teacher");
@@ -38,14 +38,19 @@
 						$new_res[$key_arr_3[$i]] = $removed[$i];
 					}
 
-		      $new_res[$key] = $value."\n";
+					if($key == "numQuiz"){
+						$new_res[$key] = $value."\n";
+					}else {
+						$new_res[$key] = $value;
+					}
+					// echo $line;
 		      $line = implode(" ", $new_res);
-          // echo '<br>';
-          // echo "success";
-          // echo '<br>';
+
 		    }
 		    $newFile .= $line;
+
 		  }
+			// print_r($newFile);
 		  file_put_contents($file,$newFile);
 	}
 

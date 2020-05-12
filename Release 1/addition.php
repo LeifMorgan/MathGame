@@ -106,17 +106,23 @@ fieldset {
     else {
       $button=true;
       $i=0;
+      
+      //loop through all problems
       foreach ($plist as $equation) {
         $username = $equation['username'];
         // print_r($equation);
+
         //only print into table if the problem is from the current user's teacher
         if($username!==$current_teacher){
           continue;
         }
+
+        //only print problem if it is addition
         $prob_type = $equation['operation'];
         if(trim($prob_type) !== "+"){
           continue;
         }
+
         //creating a new row
         if($newRow === true){
           $newRow = false;

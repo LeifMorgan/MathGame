@@ -24,7 +24,7 @@ $re = checkAccount($username, $password, $password2);
 
 if($re===1){
   if($acc === 2){
-    save_data(STUDENTS,[$username, 100, 'placeholder']);
+    save_data(STUDENTS,[$username, 100, 'placeholder',1]);
   }
   save_data(USERFILE,[$username,$password, $acc]);
 	/*Redirect browser*/

@@ -276,10 +276,10 @@ else {
         if($newRow === true){
           $newRow = false;
           echo '<tr>';
-          echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].' = <input type="text" name="'.$i.'" placeholder="'.$i.'"></input></td>';
+          echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].' = <input type="text" name="'.$i.'" </input></td>';
         }
         else {
-          echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].' = <input type="text" name="'.$i.'" placeholder="'.$i.'"></input></td>';
+          echo '<td>'.$equation['a'].' '.$equation['operation'].' '.$equation['b'].' = <input type="text" name="'.$i.'" ></input></td>';
           $col++;
           //if we need to create new row
           if($col === 1){

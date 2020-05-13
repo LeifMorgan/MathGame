@@ -17,7 +17,7 @@ if($valid===1){
 
   // save_data(STUDENTS,[$studentname, $grade, $query_array["user"]]);
   // update_student_file($file, $user, $key, $value)
-  //$key_arr_3 = array("name", "grade", "teacher");
+  //$key_arr_3 = array("name", "grade", "teacher","numQuiz");
   update_student_file(STUDENTS, $studentname, "teacher",$query_array["user"]);
 
 	/*Redirect browser*/

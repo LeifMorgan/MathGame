@@ -4,9 +4,10 @@ jill 70 teacher 1
 admin 34 teacher 1
 dona 100 teacher 1
 peer 100 teacher  1
-leif 100 teacher 1
+leif 66 teacher 3
 example 100 qwee 1
 don 100 placeholder 1
 testing 60 qwe 8
-student 34 teacher 25
+student 72 teacher 7
 stoodent 100 teacher 1
+stooodent 100 placeholder 1

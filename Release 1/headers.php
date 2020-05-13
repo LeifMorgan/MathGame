@@ -130,7 +130,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Settings</a>
     <div class="dropdown-content to-right">
-      <?php echo '<a href="../settings.php/?user='.$query_array["user"].'">Options</a>' ?>
+
       <a href="../Login.php">Logout</a>
     </div>
   </li>

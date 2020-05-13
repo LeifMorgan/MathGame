@@ -40,6 +40,9 @@
 	echo"</pre>";
 
 ?>
+<div class="button">
+	<?php echo '<a  href="../play_game.php/?user='.$query_array["user"].'" >Play Game</a>' ?>
+<div>
 
 </body>
 </html>

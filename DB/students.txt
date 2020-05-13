@@ -8,5 +8,5 @@ leif 100 teacher 1
 example 100 qwee 1
 don 100 placeholder 1
 testing 60 qwe 8
-student 76 teacher 7
+student 34 teacher 25
 stoodent 100 teacher 1

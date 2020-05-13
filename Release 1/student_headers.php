@@ -115,6 +115,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
             <?php echo '<a href="../addition.php/?user='.$query_array["user"].'">Addition</a>' ?>
             <?php echo '<a href="../subtraction.php/?user='.$query_array["user"].'">Subtraction</a>' ?>
             <?php echo '<a href="../decimals.php/?user='.$query_array["user"].'">Identify Decimal</a>' ?>
+            <?php echo '<a href="../mixed.php/?user='.$query_array["user"].'">Mixed Problems</a>' ?>
           </div>
         </li>
 
